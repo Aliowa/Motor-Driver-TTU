@@ -9,12 +9,12 @@
 
 #define pwPot A1
 #define frqPot A2
-#define phA 38
-#define phB 39
-#define phC 40
-#define phD 44
+#define phA 40
+#define phB 41
+#define phC 42
+#define phD 43
 
-SoftwareSerial mySerial(51, 50); //(RX, TX) pins
+SoftwareSerial mySerial(50, 51); //(RX pin, TX pin)
 ExtractCommand myCommand;
 
 int phases = threePhase;
@@ -34,6 +34,11 @@ double PWcorr = Pulsetime - phasecorrection;
 void setup() {
   Serial.begin(9600);
   mySerial.begin(9600);
+
+  pinMode(phA, OUTPUT);
+  pinMode(phB, OUTPUT);
+  pinMode(phC, OUTPUT);
+  pinMode(phD, OUTPUT);
 }
 
 void loop() {
