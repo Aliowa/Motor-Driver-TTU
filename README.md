@@ -1,11 +1,14 @@
 # Motor-Driver-TTU
-  Discription
+  Now uses UART for comminication.
   
 # Schematic
   Cheme here
   
 # Installing
-  Edit naxtion.h
+  Replace "NexConfig.h" from this repository, to Arduino library (Search > NexConfig.h)
   
 # Communication byte
-  Byte info goes here
+  Check Bits.xlsx for reference.
+  
+# HELP
+  If you need sme help, send me a message on FB or email: aleksei555@gmail.com
